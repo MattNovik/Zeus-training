@@ -1,0 +1,149 @@
+@import url("http://fonts.fontstorage.com/import/cinzeldecorative.css");
+@import url('https://fonts.googleapis.com/css?family=Amiri');
+html {
+    margin:0;
+	padding:0;
+	outline:none;
+	width:100vw;
+	border:none;
+    min-width:1000px;
+    overflow-x: hidden;
+    
+    ::-webkit-scrollbar {
+     width: 11px;
+      }
+	::-webkit-scrollbar-track {
+	  background-color: transparent;
+	  }
+	::-webkit-scrollbar-track-piece {
+	 background-color: transparent;
+	  }
+	::-webkit-scrollbar-thumb {
+	 height: 70px; background-color: #666; border-radius: 15px;
+	  }
+	::-webkit-scrollbar-corner {
+	 background-color: #999;
+	  }
+	::-webkit-resizer {
+	 background-color: #666;
+	  }
+
+		body {
+			margin:0;
+			padding:0;
+			span {
+				display: block;
+			}
+			header {
+					margin:0;
+					padding:0;
+					width:100%;
+					min-height:800px;
+					max-height:1200px;
+					background-image:  url("../images/header/Photo-Overlay.png"),url("../images/header/BGheader.png");
+					background-size:cover;
+					background-repeat: no-repeat;
+
+					.logo,
+					.header_scroll {
+						display:flex;
+						flex-grow:1;
+						justify-content: center;
+						align-items: center;
+					}
+
+					.logo {
+						height:300px;
+						align-items: center;
+					}
+					.header_text {
+						display:grid;
+						grid-template-rows: 70px 60px 300px;
+						grid-template-columns: 650px;
+						justify-content: center;
+						position:relative;
+						.lines_beer {
+							display:grid;
+							grid-template-columns:minmax(150px,240px) 1fr minmax(150px,240px);
+							align-items: center;
+							hr {
+								border:none;
+								border-radius: 2px;
+								outline: none;
+								background-color:  #cdb378;
+								height: 4px;
+								width:100%;
+							}
+							.beer {					
+							font-family: 'Cinzel Decorative';
+							color:  #ffffff;
+							width:250px;
+							font-size: 3.751em;/* Приближение из-за подстановки шрифтов */
+							font-weight: 900;
+							line-height: 1;/* Приближение из-за подстановки шрифтов */
+							text-align: center;
+							}
+						}
+						span {
+							display:flex;
+							justify-content: center;
+							font-family: 'Cinzel Decorative';
+							color:  #ffffff;
+							font-size: 2.0em;/* Приближение из-за подстановки шрифтов */
+							font-weight: 400;
+							line-height: 1.667;/* Приближение из-за подстановки шрифтов */
+						}
+						.header_scroll {
+						flex-direction:column;
+						width:100%;
+						position:absolute;
+						bottom:25px;
+
+							span {
+								font-family: Amiri;
+								font-style: italic;
+								color:  #cdb378;
+								font-size: 1.001em;/* Приближение из-за подстановки шрифтов */
+								line-height: 1.874;/* Приближение из-за подстановки шрифтов */
+								transform: scaleX(1.0031);/* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+								height:30px;
+							}
+						}   
+					}
+			}
+
+			main {
+				margin:0;
+				padding:0;
+				width:100%;
+				min-height:3600px;
+				background-image: url("../images/main/Photo+BG.png");
+				background-size:contain;
+				background-repeat: no-repeat;
+				.middle_text {
+					margin-top:-40px;
+					padding:0;
+					width:calc(100% - 400px);
+					h3 {
+						margin:0 0 0 40px;
+						font-family: 'Cinzel Decorative';
+						color:  #ffffff;
+						font-size: 3.501em;/* Приближение из-за подстановки шрифтов */
+						font-weight: 400;
+						line-height: 1.5;/* Приближение из-за подстановки шрифтов */
+					}
+					span {
+						margin:0 0 0 40px;
+						font-family: Amiri;
+						color:  #cdb378;
+						font-size: 1.2em;/* Приближение из-за подстановки шрифтов */
+						font-weight: 400;
+						transform: scaleX(1.0031);/* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+					}
+				}
+				.beer_box {
+					
+				}
+			}
+		}	 
+}

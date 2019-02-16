@@ -18,7 +18,7 @@ gulp.task('browserSync', function() {
     server: {
       baseDir: 'prod'
     },
-    port: 8080,
+    port: 8090,
     open: true,
     notify: false
   });

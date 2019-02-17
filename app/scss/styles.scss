@@ -58,7 +58,7 @@ html {
 					}
 					.header_text {
 						display:grid;
-						grid-template-rows: 70px 60px 300px;
+						grid-template-rows: 70px 60px 50px 250px;
 						grid-template-columns: 650px;
 						justify-content: center;
 						position:relative;
@@ -93,6 +93,15 @@ html {
 							font-weight: 400;
 							line-height: 1.667;/* Приближение из-за подстановки шрифтов */
 						}
+						.made_by {
+							font-family: Amiri;
+							font-style: italic;
+							color:  #cdb378;
+							font-size: 1.001em;/* Приближение из-за подстановки шрифтов */
+							line-height: 1.874;/* Приближение из-за подстановки шрифтов */
+							transform: scaleX(1.0031);/* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+
+						}
 						.header_scroll {
 						flex-direction:column;
 						width:100%;
@@ -123,17 +132,27 @@ html {
 				.middle_text {
 					margin-top:-40px;
 					padding:0;
-					width:calc(100% - 400px);
+					width:100%;
+					height:170px;
+					position:relative;
 					h3 {
-						margin:0 0 0 40px;
+						margin:0 0 0 70px;
+						width:70%;
 						font-family: 'Cinzel Decorative';
 						color:  #ffffff;
 						font-size: 3.501em;/* Приближение из-за подстановки шрифтов */
 						font-weight: 400;
 						line-height: 1.5;/* Приближение из-за подстановки шрифтов */
 					}
+					.right_stand_man {
+						position:absolute;
+						right:0;
+						top:-65px;
+						z-index:5;
+					}
 					span {
-						margin:0 0 0 40px;
+						margin:0 0 0 70px;
+						width:70%;
 						font-family: Amiri;
 						color:  #cdb378;
 						font-size: 1.2em;/* Приближение из-за подстановки шрифтов */
@@ -142,7 +161,64 @@ html {
 					}
 				}
 				.beer_box {
-					
+					margin:0;
+					padding:0;
+					width:85%;
+					height:300px;
+					display:grid;
+					grid-template-columns: 1fr 400px;
+					align-items: center;
+					position:relative;
+					z-index:99999;
+					background-color:#232615;
+					box-shadow: 0px 0px 155px 0px rgba(31, 33, 43, 0.65);
+					background-image: url("../images/main/LogoZeus.png");
+					background-size:cover;
+					background-repeat: no-repeat; 
+					.beer_box_text {
+						margin:0;
+						padding:0 0 0 70px;
+						h3 {
+							margin:25px 0 0 0 ;
+							height:70px;
+							font-family: 'Cinzel Decorative';
+							color:  #cdb378;
+							font-size: 2.7em;/* Приближение из-за подстановки шрифтов */
+							font-weight: 400;
+							line-height: 1;/* Приближение из-за подстановки шрифтов */
+						}
+						span {
+							height:70px;
+							font-family: Amiri;
+							color:  #b5ba99;
+							font-size: 1.2em;/* Приближение из-за подстановки шрифтов */
+							font-weight: 400;
+							line-height: 1.5;/* Приближение из-за подстановки шрифтов */
+						}
+						button {
+							border-style: solid;
+							border-width: 2px;
+							border-color:  #404429;
+							background-color:  #272a18;
+							width: 150px;
+							height: 40px;
+							font-family: Amiri;
+							color:  #ffffff;
+							font-size: 0.8em;/* Приближение из-за подстановки шрифтов */
+							font-weight: 400;
+							line-height: 1;/* Приближение из-за подстановки шрифтов */
+						}
+					}
+					.beer_img {
+						position:absolute;
+						right:70px;
+						top:-180px;
+
+						img {
+							width:170px;
+							height:700px;
+						}
+					}
 				}
 			}
 		}	 

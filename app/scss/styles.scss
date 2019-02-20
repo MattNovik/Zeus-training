@@ -212,12 +212,36 @@ html {
 					.beer_img {
 						position:absolute;
 						right:70px;
-						top:-180px;
+						top:-170px;
 
 						img {
 							width:170px;
-							height:700px;
+							height:600px;
 						}
+					}
+				}
+				.drinking_man_box {
+					margin:0;
+					padding:0;
+					display:flex;
+					flex-grow:1;
+					border:solid 1px black;
+					background:url("../images/main/middlePhoto(drinkman).png") no-repeat;
+					background-size:cover;
+					h3 {
+						margin:0;
+						padding:0;
+						position:relative;
+						left:60%;
+						display:flex;
+						align-items:center;
+						height:600px;
+						font-family: 'Cinzel Decorative';
+						color:  #1a1c0f;
+						font-size: 2.751em;/* Приближение из-за подстановки шрифтов */
+						font-weight: 900;
+						line-height: 1.2;/* Приближение из-за подстановки шрифтов */
+						text-align: left;
 					}
 				}
 			}
